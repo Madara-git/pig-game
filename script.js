@@ -17,7 +17,7 @@ function gameChange() {
 }
 rollDice.addEventListener('click', function () {
   let random = Math.floor(Math.random() * 6 + 1);
-  diceImage.src = `dice-${random}.png`;
+  diceImage.src = `img/dice-${random}.png`;
   if (isPlaying) {
     diceImage.classList.remove('hidden');
     if (random !== 1) {
